@@ -10,10 +10,10 @@ function audioToggle() {
     if (sndPlaying) {
         audioPlayerObj.pause();
         sndPlaying = false;
-        sndIconObj.innerHTML = "<img src='/wbdv242/img/sound-off.svg' alt='sound off icon'/>";
+        sndIconObj.innerHTML = "<img src='img/sound-off.svg' alt='sound off icon'/>";
     } else {
         audioPlayerObj.play();
         sndPlaying = true;
-        sndIconObj.innerHTML = "<img src='/wbdv242/img/sound.svg' alt='sound off icon'/>";
+        sndIconObj.innerHTML = "<img src='img/sound.svg' alt='sound off icon'/>";
     }
 }
