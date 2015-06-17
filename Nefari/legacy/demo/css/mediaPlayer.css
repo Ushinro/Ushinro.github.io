@@ -1,0 +1,197 @@
+/* Mobile First */
+button {
+	background : none;
+	border     : 0;
+	color      : #EEE;
+}
+
+button:hover {
+	background : rgba( 0, 0, 0, 0.5 );
+}
+
+button, input[type="range"], select {
+	cursor : pointer;
+}
+
+.mediaContainer {
+	margin : 0;
+}
+
+.mediaTitle {
+	display   : block;
+	margin    : 5px 1em;
+	font-size : 1em;
+}
+
+.mediaDescription {
+	padding   : 10px 3em;
+	font-size : 1em;
+	width     : 100%;
+}
+
+.mediaPlayerContainer {
+	text-align : center;
+}
+
+.mediaPlayer {
+	position : relative;
+
+	margin   : auto;
+}
+
+.media {
+	margin : auto;
+	width  : 100%;
+}
+
+.mediaControls {
+	position           : relative;
+	margin             : auto;
+	bottom             : 32px;
+	left               : 0;
+	right              : 0;
+	opacity            : 1;
+	-webkit-transition : opacity 0.3s;
+	transition         : opacity 0.3s;
+	background         : linear-gradient( top, rgb( 50, 50, 50 ) 13%, rgb( 10, 10, 10 ) 100% );
+	background         : -moz-linear-gradient( top, rgb( 50, 50, 50 ) 13%, rgb( 10, 10, 10 ) 100% );
+	background         : -webkit-linear-gradient( top, rgb( 50, 50, 50 ) 13%, rgb( 10, 10, 10 ) 100% );
+
+	background         : -webkit-gradient( 
+		linear,
+		left bottom,
+		left top,
+		color-stop( 0.13, rgb( 50, 50, 50 ) ),
+		color-stop( 1, rgb( 10, 10, 10 ) )
+	 );
+	z-index            : 2147483647;
+	width              : 100%;
+	height             : 30px;
+}
+
+.playButton,
+.mediaTimeDisplay,
+.seekBar,
+.muteButton,
+.volumeBar,
+.playerSizeMenu,
+.fullScreenButton {
+	margin         : 0 5px;
+	vertical-align : middle;
+}
+
+.playButton,
+.muteButton,
+.fullScreenButton {
+	color          : #AAA;
+	text-transform : uppercase;
+	height         : 100%;
+}
+
+.playButton,
+.muteButton,
+.fullScreenButton {
+	padding : 0 30px;
+	width   : 40px;
+}
+
+.playButton {
+	
+}
+
+.mediaTimeDisplay {
+	color     : #AAA;
+	font-size : 0.75em;
+	width     : 50px;
+}
+
+.seekBar,
+.volumeBar {
+	border-radius      : 0px;
+	height             : 5px;
+	vertical-align     : middle;
+	-webkit-appearance : none;
+	-moz-appearnace    : none;
+}
+
+.seekBar {
+	width              : 30%;
+	height             : 25%;
+
+	appearance         : progressbar;
+	-webkit-appearnace : progressbar;
+	-moz-appearance    : progressbar;
+}
+
+.mediaTimeDisplay,
+.muteButton,
+.volumeBar,
+.playerSizeMenuContainer {
+	display : none;
+}
+
+
+/* Tablet */
+@media screen and ( min-width: 768px ) {
+
+}
+
+
+/* Desktop */
+@media screen and ( min-width: 1024px ) {
+	.mediaTitle {
+		font-size : 1.5em;
+	}
+
+	/* Maybe move .relatedMedia styles to separate stylesheet */
+	.relatedMedia ul li {
+		border  : 1px solid #888;
+		padding : 1em;
+	}
+
+	.relatedMedia ul li:hover {
+		background : #DDD;
+	}
+
+	.mediaControls {
+		opacity : 0;
+	}
+
+	.mediaPlayer:hover .mediaControls {
+		opacity : 1;
+	}
+
+	.mediaTimeDisplay,
+	.muteButton,
+	.volumeBar,
+	.playerSizeMenuContainer {
+		display : inline;
+	}
+
+	.volumeBar {
+		width  : 10%;
+		height : 25%;
+	}
+
+	.playerSizeMenuContainer .playerSizeMenu {
+		background : transparent;
+		color      : #AAA;
+		font-size  : 0.75em;
+		border     : 0;
+	}
+
+	.playerSizeMenuContainer {
+		overflow : hidden;
+	}
+
+	.playerSizeMenu {
+		text-align         : center;
+		appearance         : none;
+		-webkit-appearance : none;
+		-moz-appearnace    : none;
+	}
+
+	.playerSizeMenu option {
+		background : #222;
+	}
+}

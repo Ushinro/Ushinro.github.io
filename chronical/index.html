@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" encoding="utf-8">
+        <head>
+                <!-- META -->
+                <meta charset="utf-8" />
+                <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0" />
+                <meta name="author" content="Ushinro">
+                <meta name="description" content="Schedule events!">
+                <meta name="keywords" content="">
+
+
+                <link rel="stylesheet" href="css/reset.css">
+                <link rel="stylesheet" href="css/chronical.css">
+
+                
+                <title>Chronical - Schedule Events</title>
+        </head>
+
+        <body>
+                <div id="currentTimeDisplay">
+                        <span id="currentTime"></span>
+                        <span id="timezoneOffset"></span>
+                </div>
+
+                <form>
+                        <div class="eventDetailInput">
+                                <label for="eventName" id="eventNameLabel">Event Name</label>
+                                <input type="text" id="eventName">
+                        </div>
+
+                        <div class="eventDetailInput">
+                                <label for="eventDate" id="eventDateLabel">Event Date</label>
+                                <input type="date" id="eventDate">
+                        </div>
+
+                        <div class="eventDetailInput">
+                                <label for="eventTime" id="eventTimeLabel">Event Time</label>
+                                <input type="time" id="eventTime">
+                        </div>
+
+                        <div class="eventDetailInput">
+                                <button type="submit" id="eventDetailsSubmit">Create New Countdown</button>
+                        </div>
+                </form>
+
+                <table id="eventsList">
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                </table>
+
+                <script src="js/chronical.js"></script>
+        </body>
+</html>

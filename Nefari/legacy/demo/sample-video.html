@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Brian Hom" />
+		<meta name="description" content="Azureus Rising Redub" />
+		<meta name="keywords" content="" />
+		
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/mediaPlayer.css" />
+		
+		<title>Azureus Rising Redub</title>
+	</head>
+
+	<body>
+		<header></header>
+		
+		<nav></nav>
+
+		<section class="mediaContainer">
+			<div class="mediaPlayerContainer">
+				<span class="mediaPlayer">
+					<!-- Video -->
+					<video class="media" preload="metadata" poster="img/demo-thumb.png">
+						<source src="videos/demo.mp4" type="video/mp4" />
+						<source src="videos/mikethefrog.mp4" type="video/mp4" />
+						<source src="videos/mikethefrog.webm" type="video/webm" />
+						<p>
+							Your browser doesn't support HTML5 video or you have JavaScript disabled.
+							<a href="/videos/tcp.mp4">Download</a> the video instead.
+						</p>
+					</video>
+					
+					<!-- Video Controls -->
+					<div class="mediaControls">
+						<button type="button" class="playButton"><img src="img/play.svg" alt="Play" /></button>
+						<span class="mediaTimeDisplay">
+							<span class="currentHourContainer" /></span>
+							<span class="currentMinuteContainer" /></span>
+							<span class="currentSecondContainer" /></span>
+							/
+							<span class="totalHoursContainer" /></span>
+							<span class="totalMinutesContainer" /></span>
+							<span class="totalSecondsContainer" /></span>
+						</span>
+						<input type="range" class="seekBar" value="0" step="any">
+						<button type="button" class="muteButton"><img src="img/mute.svg" alt="Mute" /></button>
+						<input type="range" class="volumeBar" min="0" max="1" step="0.01" value="1">
+						<span class="playerSizeMenuContainer">
+							<select class="playerSizeMenu">
+								<option value="auto">Auto</option>
+								<option value="1080">1920 x 1080</option>
+								<option value="720" selected>1280 x 720</option>
+								<option value="480">640 x 480</option>
+							</select>
+						</span>
+						<button type="button" class="fullScreenButton"><img src="img/fullScreen.svg" alt="Full Screen" /></button>
+					</div>
+				</span>
+			</div>
+
+			<h1 class="mediaTitle">Azureus Rising (Replaced Sound Effects)</h1>
+			<article class="mediaDescription">
+				<p>Date published: <date datetime="2014-08-26" title="August 26, 2014">2014-08-26</date></p>
+				<p>Author: Brian Hom</p>
+				<p>Azureus Rising is a short film originally produced by <a href="http://thesunsetsblack.com/">Black Sun Entertainment</a>. The original can be found <a href="https://vimeo.com/20701281">here</a>. This version was redubbed with custom foley and sound effects to achieve the same or at least a similar level of quality to the original's sounds.</p>
+				<p>Video player is in alpha and may have both functional and graphical issues.</p>
+			</article>
+		</section>
+
+		<aside class="relatedMedia">
+			<ul>
+				<a href="#"><li>Related Media 1</li></a>
+				<a href="#"><li>Related Media 2</li></a>
+				<a href="#"><li>Related Media 3</li></a>
+			</ul>
+		</aside>
+		
+		<footer></footer>
+		
+		<script src="js/mediaPlayer.js"></script>
+	</body>
+</html>

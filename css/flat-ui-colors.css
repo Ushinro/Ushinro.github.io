@@ -1,0 +1,288 @@
+a {
+	color: inherit;
+}
+
+body {
+	font-family : Montserrat, DejaVu Sans, Euphemia, Corbel, Britannic Bold, sans-serif;
+	text-align  : center;
+}
+
+header,
+footer {
+	background : rgba(0, 0, 0, 0.8);
+	color      : #ecf0f1;
+
+	padding    : 0.5em 0;
+
+	width      : 100%;
+}
+
+header input,
+header select {
+	font-size  : 1.5em;
+	margin     : auto;
+	text-align : center;
+	width      : 300px;
+}
+
+#color-code-format-field {
+	-moz-appearance    : none;
+	-webkit-appearance : none;
+	appearance         : none;
+	border             : none;
+	cursor             : pointer;
+	padding            : 1px 0;
+}
+
+#color-code-format-field:after {
+	content: "V";
+}
+
+#wrapper {
+	color                : #FFFFFF;
+
+	font-size            : 1.5em;
+
+	-moz-column-count    : 1;
+	-moz-column-width    : 100%;
+	-moz-column-gap      : 0;
+	-moz-column-rule     : 0;
+
+	-webkit-column-count : 1;
+	-webkit-column-width : 100%;
+	-webkit-column-gap   : 0;
+	-webkit-column-rule  : 0;
+
+	column-count         : 1;
+	column-width         : 100%;
+	column-gap           : 0;
+	column-rule          : 0;
+}
+
+#wrapper div {
+	cursor     : pointer;
+	padding    : 35% 0;
+	text-align : center;
+}
+
+
+
+/* Color Tiles */
+.turquoise {
+	background : #1abc9c;
+}
+
+.green-sea {
+	background : #16a085;
+}
+
+
+
+.emerald {
+	background : #2ecc71;
+}
+
+.nephritis {
+	background : #27ae60;
+}
+
+
+
+.peter-river {
+	background : #3498db;
+}
+
+.belize-hole {
+	background : #2980b9;
+}
+
+
+
+.amethyst {
+	background : #9b59b6;
+}
+
+.wisteria {
+	background : #8e44ad;
+}
+
+
+
+.wet-asphalt {
+	background : #34495e;
+}
+
+.midnight-blue {
+	background : #2c3e50;
+}
+
+
+
+.sun-flower {
+	background : #f1c40f;
+}
+
+.orange {
+	background : #f39c12;
+}
+
+
+
+.carrot {
+	background : #e67e22;
+}
+
+.pumpkin {
+	background : #d35400;
+}
+
+
+
+.alizarin {
+	background : #e74c3c;
+}
+
+.pomegranate {
+	background : #c0392b;
+}
+
+
+
+.clouds {
+	background : #ecf0f1;
+	color      : #BBB;
+}
+
+.silver {
+	background : #bdc3c7;
+}
+
+
+
+.concrete {
+	background : #95a5a6;
+}
+
+.asbestos {
+	background : #7f8c8d;
+}
+
+
+.alizarin,
+.amethyst,
+.asbestos,
+.belize-hole,
+.carrot,
+.clouds,
+.concrete,
+.emerald,
+.green-sea,
+.midnight-blue,
+.nephritis,
+.orange,
+.peter-river,
+.pomegranate,
+.pumpkin,
+.silver,
+.sun-flower,
+.turquoise,
+.wet-asphalt,
+.wisteria {
+	animation-delay     : 0.25s;
+	animation-duration  : 1s;
+	animation-name      : flipIn;
+	backface-visibility : hidden;
+}
+
+
+/* ANIMATIONS */
+@keyframes flipIn {
+	0% {
+		transform: rotateY( 180deg );
+	}
+
+	100% {
+		transform: rotateY( 0deg );
+	}
+}
+
+
+
+@media screen and (min-width: 480px) {
+	#wrapper {
+		-moz-column-count    : 2;
+		-moz-column-width    : 50%;
+		-moz-column-gap      : 0;
+		-moz-column-rule     : 0;
+
+		-webkit-column-count : 2;
+		-webkit-column-width : 50%;
+		-webkit-column-gap   : 0;
+		-webkit-column-rule  : 0;
+
+		column-count         : 2;
+		column-width         : 50%;
+		column-gap           : 0;
+		column-rule          : 0;
+	}
+}
+
+
+@media screen and (min-width: 640px) {
+	#wrapper {
+		-moz-column-count    : 3;
+		-moz-column-width    : 33.33%;
+		-moz-column-gap      : 0;
+		-moz-column-rule     : 0;
+
+		-webkit-column-count : 3;
+		-webkit-column-width : 33.33%;
+		-webkit-column-gap   : 0;
+		-webkit-column-rule  : 0;
+
+		column-count         : 3;
+		column-width         : 33.33%;
+		column-gap           : 0;
+		column-rule          : 0;
+	}
+}
+
+
+@media screen and (min-width: 800px) {
+	#wrapper {
+		-moz-column-count    : 4;
+		-moz-column-width    : 25%;
+		-moz-column-gap      : 0;
+		-moz-column-rule     : 0;
+
+		-webkit-column-count : 4;
+		-webkit-column-width : 25%;
+		-webkit-column-gap   : 0;
+		-webkit-column-rule  : 0;
+
+		column-count         : 4;
+		column-width         : 25%;
+		column-gap           : 0;
+		column-rule          : 0;
+	}
+}
+
+
+@media screen and (min-width: 1024px) {
+	#wrapper {
+		-moz-column-count    : 5;
+		-moz-column-width    : 20%;
+		-moz-column-gap      : 0;
+		-moz-column-rule     : 0;
+
+		-webkit-column-count : 5;
+		-webkit-column-width : 20%;
+		-webkit-column-gap   : 0;
+		-webkit-column-rule  : 0;
+
+		column-count         : 5;
+		column-width         : 20%;
+		column-gap           : 0;
+		column-rule          : 0;
+	}
+}

@@ -1,0 +1,38 @@
+<html>
+        <head>
+                <!-- META -->
+                <meta charset="utf-8" />
+                <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0" />
+                <meta name="author" content="Ushinro">
+                <meta name="description" content="Create flashcards online!">
+                <meta name="keywords" content="">
+
+
+                <link rel="stylesheet" href="css/reset.css">
+                <link rel="stylesheet" href="css/flashcards.css">
+
+
+                <title>Flashcards - Create Card</title>
+        </head>
+
+        <body>
+                <a href="card-thumbs.html" onclick="var tempSetIndex=sessionStorage.currentSet; resetSessionStorage(); sessionStorage.setItem('currentSet', tempSetIndex);"><button>Return to Cards</button></a>
+
+                <div id="flashcardForm">
+                        <div id="buttons">
+                                <br><button onclick="saveCard();">Save Card</button></br>
+                                <br><button onclick="createNewCard();">Create a New Card</button>
+                        </div>
+
+                        <label>Front:
+                                <br><textarea name="frontSide" id="frontSide" cols="30" rows="10" required></textarea>
+                        </label>
+
+                        <br><label>Back:
+                                <br><textarea name="backSide" id="backSide" cols="30" rows="10" required></textarea>
+                        </label>
+                </div>
+
+                <script src="js/flashcards.js"></script>
+        </body>
+</html>

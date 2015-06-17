@@ -1,0 +1,24 @@
+CACHE MANIFEST
+# version - 02
+
+CACHE:
+
+# FONTS
+
+
+# CSS
+css/reset.css
+css/clicker.css
+
+# IMAGES
+
+
+# HTML
+index.html
+
+# JAVASCRIPT - SPECIFIC ORDER
+js/js-refresh-manifest.js
+js/clicker.js
+
+NETWORK:
+*

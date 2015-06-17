@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" encoding="utf-8">
+        <head>
+                <!-- META -->
+                <meta charset="utf-8" />
+                <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0" />
+                <meta name="author" content="Ushinro">
+                <meta name="description" content="Colors proven to work for a flat-UI design.">
+                <meta name="keywords" content="">
+
+
+                <link rel="stylesheet" href="css/reset.css">
+                <link rel="stylesheet" href="css/flat-ui-colors.css">
+
+
+                <title>Flat UI Colors</title>
+        </head>
+
+        <body>
+                <header>
+                        <select name="color-code-format-field" id="color-code-format-field" onchange="convertCurrentColorCode();">
+                                <!-- Default selected has value so that an error isn't made. -->
+                                <option value="" disabled selected>Choose Format</option>
+                                <option value="#000">HEX - #000000</option>
+                                <option value="000">HEX - 000000</option>
+                                <option value="rgb">RGB - rgb(0, 0, 0)</option>
+                                <option value="rgba">RGBA - rgba(0, 0, 0, 1)</option>
+                        </select>
+                        <input type="text" value="" id="color-code-field" readonly placeholder="Color Code" onclick="this.focus(); this.select();">
+                </header>
+
+                <div id="wrapper">                        
+                        <div class="turquoise"     onclick="copyColor(TURQUOISE_HEX);">Turquoise</div>
+                        <div class="green-sea"     onclick="copyColor(GREEN_SEA_HEX);">Green Sea</div>
+                        <div class="emerald"       onclick="copyColor(EMERALD_HEX);">Emerald</div>
+                        <div class="nephritis"     onclick="copyColor(NEPHRITIS_HEX);">Nephritis</div>
+                        <div class="peter-river"   onclick="copyColor(PETER_RIVER_HEX);">Peter River</div>
+                        <div class="belize-hole"   onclick="copyColor(BELIZE_HOLE_HEX);">Belize Hole</div>
+                        <div class="amethyst"      onclick="copyColor(AMETHYST_HEX);">Amethyst</div>
+                        <div class="wisteria"      onclick="copyColor(WISTERIA_HEX);">Wisteria</div>
+                        <div class="wet-asphalt"   onclick="copyColor(WET_ASPHALT_HEX);">Wet Asphalt</div>
+                        <div class="midnight-blue" onclick="copyColor(MIDNIGHT_BLUE_HEX);">Midnight Blue</div>
+                        <div class="alizarin"      onclick="copyColor(ALIZARIN_HEX);">Alizarin</div>
+                        <div class="pomegranate"   onclick="copyColor(POMEGRANATE_HEX);">Pomegranate</div>
+                        <div class="sun-flower"    onclick="copyColor(SUN_FLOWER_HEX);">Sun Flower</div>
+                        <div class="orange"        onclick="copyColor(ORANGE_HEX);">Orange</div>
+                        <div class="carrot"        onclick="copyColor(CARROT_HEX);">Carrot</div>
+                        <div class="pumpkin"       onclick="copyColor(PUMPKIN_HEX);">Pumpkin</div>
+                        <div class="clouds"        onclick="copyColor(CLOUDS_HEX);">Clouds</div>
+                        <div class="silver"        onclick="copyColor(SILVER_HEX);">Silver</div>
+                        <div class="concrete"      onclick="copyColor(CONCRETE_HEX);">Concrete</div>
+                        <div class="asbestos"      onclick="copyColor(ASBESTOS_HEX);">Asbestos</div>
+                </div>
+
+                <footer>
+                        All rights reserved.
+                        Developed by Ushinro.
+                        This site is an attempt to improve on the <a href="http://flatuicolors.com">Flat UI Colors</a> page by not relying on plugins such as Flash.
+                        Last updated 2015-02-10.
+                </footer>
+
+                <script src="js/flat-ui-colors.js"></script>
+        </body>
+</html>

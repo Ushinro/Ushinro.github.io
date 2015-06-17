@@ -1,0 +1,8 @@
+#currentPos {
+        text-align: center;
+}
+
+#currentXPos,
+#currentYPos {
+        font-weight: 600;
+}

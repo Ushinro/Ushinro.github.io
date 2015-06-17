@@ -1,0 +1,543 @@
+.dropdown-menu li,
+#account-menu li:hover > .dropdown-menu {
+	display : block;
+}
+
+#logout {
+	font-family     : Georgia, serif;
+	font-style      : italic;
+	text-decoration : underline;
+}
+
+/* Search bar ------------------------------------------------------------------------- */
+
+#search {
+	border        : 1px #d9d9d9 solid;
+	padding       : 7px;
+	margin        : 5px 0 20px;
+	border-radius : 7px;
+	transition    : 0.2s all;
+}
+
+#search:focus {
+	border-radius : 2px;
+	border        : none;
+	margin-bottom : 18px;
+	border-bottom : 4px #6da9db solid;
+	outline       : none;
+}
+
+ul .dropdown-menu {
+	display : none;
+}
+
+
+
+/******************************/
+
+/* Border-box: the width and height properties include the padding and border, but not the margin. ----------------------------------------- */
+* {
+	-moz-box-sizing    : border-box;
+	-webkit-box-sizing : border-box;
+	box-sizing         : border-box;
+}
+
+
+/* Float fix -------------------------------------------------------------------------- */
+.clearfix:before, .clearfix:after {
+	content : " ";
+	display : block;
+}
+
+.clearfix:after {
+	clear : both;
+}
+
+.clearfix {
+	*zoom : 1;
+}
+
+
+/* Attributes ------------------------------------------------------------------------- */
+.left {
+	float : left;
+}
+
+.right {
+	float : right;
+}
+
+
+/* General styling -------------------------------------------------------------------- */
+body {
+	background  : #ededed;
+	font-family : arial, sans-serif;
+	color       : rgba(0, 0, 0, 0.75);
+	font-size   : 16px;
+}
+
+a, a:hover {
+	color           : rgba(0, 0, 0, 0.75);
+	text-decoration : none;
+}
+
+#page-wrapper {
+	width  : 960px;
+	margin : 50px auto 0px auto;
+}
+
+#digm-logo {
+	float             : left;
+	background        : none;
+	background-image  : url(../_images/westphal_logo.png);
+	background-repeat : no-repeat;
+	background-size   : contain;
+	width             : 350px;
+	height            : 100px;
+	margin-bottom     : 50px;
+}
+
+ul {
+	list-style-type : none;
+	padding         : 0;
+}
+
+li {
+	display         : inline;
+	list-style-type : none;
+}
+
+
+/* Breadcrumb navigation -------------------------------------------------------------- */
+
+#breadcrumb p {
+	text-decoration : none;
+	font-weight     : bold;
+	color           : #a2a2a2;
+	display         : inline;
+}
+
+#breadcrumb p:hover{
+	cursor : default;
+}
+
+#breadcrumb a {
+	text-decoration : none;
+	font-weight     : bold;
+	color           : #07294e;
+}
+
+#breadcrumb li a:hover {
+	padding-bottom : 10px;
+	border-bottom  : 3px #6da9db solid;
+}
+
+#breadcrumb li:last-of-type {
+	padding-bottom : 10px;
+	border-bottom  : 3px #3070a5 solid;
+}
+
+#breadcrumb li:last-of-type a {
+	color : #3070a5;
+}
+
+#breadcrumb li:after {
+	padding     : 0px 15px;
+	font-weight : bold;
+	content     : "/";
+}
+
+#breadcrumb li:last-of-type:after {
+	padding : 0px;
+	content : " ";
+}
+
+/* Class listings on admin view ------------------------------------------------------- */
+
+.admin-class-list ul li:after {
+	content    : "";
+	display    : block;
+	height     : 1px;
+	width      : 100%;
+	margin     : 10px 0 10px;
+	background : #b8b6b7;
+}
+
+.admin-class-list a {
+	display : block;
+}
+
+.admin-class-list a:first-of-type {
+	font-weight   : bold;
+	padding       : 10px 10px;
+	border-radius : 5px 5px 0px 0px;
+}
+
+.admin-class-list a:last-of-type {
+	padding       : 10px 10px;
+	padding-top   : 0px;
+	border-radius : 0px 0px 5px 5px;
+}
+
+.admin-class-list li:hover a{
+	background : #dedede;
+}
+
+/* Page content (beginning with heading) ---------------------------------------------- */
+
+#content {
+	background         : white;
+	padding            : 25px;
+	margin-top         : 35px;
+	-webkit-box-shadow : 0px 1px 1px 1px rgba(0,0,0,0.20);
+	-moz-box-shadow    : 0px 1px 1px 1px rgba(0,0,0,0.20);
+	box-shadow         : 0px 1px 1px 1px rgba(0,0,0,0.20);
+	border-radius      : 3px;
+}
+
+/* Take Attendance Content */
+#attendance-content {
+  background: white;
+  padding: 25px;
+  -webkit-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.20);
+  -moz-box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.20);
+  box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.20);
+  border-radius: 3px;
+}
+
+#content h1, #attendance-content h1 {
+	padding   : 5px 0 20px;
+	color     : #a6a4a5;
+	font-size : 2em;
+}
+
+#heading ul {
+	display : inline;
+	padding : 5px 0 20px;
+	float   : left;
+}
+
+#heading ul li,
+.modal-title {
+	font-family    : "futura-pt-condensed", sans-serif;
+	text-transform : uppercase;
+	color          : #a6a4a5;
+	font-size      : 2em;
+	font-weight    : bold;
+}
+
+.modal-title {
+	color : #1C294E;
+}
+
+.modal-header {
+	padding-top    : 5px;
+	padding-bottom : 5px;
+}
+
+#heading li:last-of-type:after {
+	content : " ";
+}
+
+.small-heading ul li {
+	font-size : 1em;
+}
+
+#heading ul .student-email {
+	display   : block;
+	font-size : 1em;
+}
+
+
+/* Login page ------------------------------------------------------------------------- */
+
+#login-logo {
+	display    : block;
+	width      : 50%;
+	margin     : 0 auto;
+	margin-top : 90px;
+}
+
+.login-title {
+	text-align     : center;
+	font-family    : "futura-pt-condensed", sans-serif;
+	text-transform : uppercase;
+	font-size      : 4em;
+	font-weight    : bold;
+	margin         : 20px 0;
+}
+
+#login-form {
+	width  : 480px;
+	margin : 0 auto;
+}
+
+#login-form input {
+	width   : 100%;
+	padding : 15px;
+	margin  : 0 0 0px;
+}
+
+#login-form input:last-of-type {
+	margin-top : 0px;
+}
+
+#login-form a {
+	color           : #575757;
+	font-size       : 0.85em;
+	text-decoration : underline;
+}
+
+#login-form button {
+	width         : 100%;
+	margin-top    : 15px;
+	margin-bottom : 20px;
+}
+
+input#username {
+	margin-bottom : 0px;
+	border        : 1px solid #ccc;
+	border-radius : 7px 7px 0 0;
+}
+
+input#password {
+	border        : 1px solid #ccc;
+	border-top    : 0;
+	border-radius : 0 0 7px 7px;
+}
+
+.reset-pw {
+	text-decoration : underline;
+	cursor          : pointer;
+}
+
+.reset-pw:hover {
+	color : #6DA9DB;
+}
+
+#attendance h1 {
+	font-family    : "futura-pt-condensed", sans-serif;
+	font-weight    : bold;
+	font-size      : 3em;
+	text-transform : uppercase;
+	text-align     : center;
+	margin         : 50px 0 15px;
+}
+
+#attendance p {
+	font-family   : arial, sans-serif;
+	text-align    : center;
+	margin-bottom : 50px;
+}
+
+#attendance img {
+	display       : block;
+	width         : 150px;
+	margin        : 25px auto;
+	margin-bottom : 70px;
+}
+
+#attendance-card,
+#checkmark,
+#x-mark {
+	display : block;
+	width   : 250px;
+	margin  : 0 auto;
+}
+
+#card-swipe-input {
+	border  : none;
+	color   : transparent;
+	outline : none;
+}
+
+
+
+/* Button styling --------------------------------------------------------------------- */
+
+.btn {
+	font-family     : "futura-pt-condensed", sans-serif;
+	letter-spacing  : 0.02em;
+	text-transform  : uppercase;
+	text-align      : center;
+	display         : inline-block;
+	border          : none;
+	color           : white;
+	text-align      : center;
+	font-weight     : bolder;
+	padding         : 10px 20px;
+	text-shadow     : 0px 1px 2px rgba(0, 0, 0, 0.75);
+	font-size       : 19px;
+	text-decoration : none;
+	border-radius   : 3px;
+	background      : #005f95;
+	border-bottom   : 5px solid #07294d;
+	transition      : all 0.1s;
+}
+
+.btn:hover {
+	background    : #4499c9 !important;
+	padding-top   : 9px;
+	border-bottom : 6px solid #005f95;
+}
+
+.btn:active {
+	border-bottom : 0px solid #005f95;
+	padding-top   : 15px;
+}
+
+.btn-space {
+	margin-right : 10px;
+}
+
+a.btn {
+	color : white;
+}
+
+.green-btn {
+	background    : #989f0c;
+	border-bottom : 5px solid #7d830e;
+	margin-right  : 0;
+}
+
+.green-btn:hover {
+	background   : #b7bf10 !important;
+	border-color : #989f0c;
+}
+
+.orange-btn {
+	background    : #cc741a;
+	border-bottom : 5px solid #a86015;
+}
+
+.orange-btn:hover {
+	background   : #ff8f1c !important;
+	border-color : #cc741a;
+}
+
+
+/* Modals ----------------------------------------------------------------------------- */
+
+.close-button {
+	font-size : 50px;
+}
+
+label {
+	font-weight : bold;
+}
+
+#username-label,
+#password-label {
+	position : absolute !important;
+	top      : -9999px !important;
+	left     : -9999px !important;
+}
+
+textarea {
+	padding : 10px;
+}
+
+#reset-pw-form p,
+#add-class-form p,
+#edit-class-form p,
+#remove-student-modal p {
+	font-weight : bold;
+}
+
+#add-student-modal input,
+#edit-student-modal input,
+#excuse-all-modal input,
+#excuse-all-modal textarea,
+#reset-pw-form input,
+#add-class-form input:not([type=checkbox]),
+#edit-class-form input:not([type=checkbox]),
+#edit-notes-modal textarea {
+	margin  : 0 auto 10px;
+	display : block;
+	width   : 100%;
+}
+
+#edit-notes-modal textarea {
+	height     : 8em;
+	min-height : 4em;
+	resize     : vertical;
+}
+
+.meeting-days {
+	align-items     : center;
+	display         : flex;
+	justify-content : space-between;
+}
+
+
+/* Tables ----------------------------------------------------------------------------- */
+
+.table-top {
+	font-weight : bold;
+}
+
+.table-top th {
+	cursor     : pointer;
+	text-align : center;
+}
+
+table {
+	width           : 100%;
+	border-collapse : separate;
+	border-spacing  : 0;
+}
+
+th:first-child {
+	padding    : 10px;
+	text-align : left;
+}
+
+th:last-child {
+	padding-right : 10px;
+}
+
+th {
+	text-align : left;
+	padding    : 10px 10px 10px 0;
+}
+
+td {
+	vertical-align : middle;
+	padding        : 10px 10px 10px 0;
+	margin-left    : 10px;
+	text-align     : left;
+}
+
+td:first-child {
+	text-align   : left;
+	padding-left : 10px;
+}
+
+tr:hover {
+	background-color : rgba(67, 152, 200, 0.25);
+}
+
+.dash-table tr:hover {
+	background : none;
+}
+
+.dash-table tr:nth-child(even) {
+	background : #ebebeb;
+}
+
+tr:nth-child(even) {
+	background : #ebebeb;
+}
+
+.dash-table td:first-child {
+	text-align : left;
+}
+
+.dash-table td {
+	text-align : right;
+}
+
+.attendance-count,
+.table-action {
+	text-align : center;
+}

@@ -1,0 +1,50 @@
+<html lang="en" manifest="cache.manifest">
+        <head>
+                <!-- META -->
+                <meta charset="utf-8" />
+                <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0" />
+                <meta name="author" content="Ushinro">
+                <meta name="description" content="A basic stopwatch application.">
+                <meta name="keywords" content="stopwatch stop watch">
+
+
+                <link rel="stylesheet" href="css/reset.css">
+                <link rel="stylesheet" href="css/clicker.css">
+
+
+                <title>Nervous Tick Clicker</title>
+        </head>
+
+        <body>
+                <div id="stopwatch">
+                        <div id="time-display">
+                                <span id="tick-hours">00</span>
+                                :
+                                <span id="tick-minutes">00</span>
+                                :
+                                <span id="tick-seconds">00</span>
+                                <!-- .
+                                <span id="tick-milliseconds">000</span> -->
+                        </div>
+
+                        <div id="timer-control">
+                                <button id="toggleStopwatch" onclick="startStopwatch();">Start</button>
+                                <button onclick="pauseStopwatch();">Pause</button>
+                                <button onclick="stopStopwatch();">Stop</button>
+                                <button id="resetStopwatch" onclick="resetStopwatch()">Reset</button>
+                        </div>
+                </div>
+                
+                <div id="clicker">
+                        <div id="click-rate"><span id="click-count-rate">0</span> clicks per minute</div>
+                        <div id="click-counter">
+                                <button class="subtract" onclick="addClicks(-1);">-</button><span id="click-count">0</span><button class="add" onclick="addClicks(1)">+</button>
+                        </div>
+                        <button id="reset-clicks-button" onclick="resetClicks();">Reset Count</button>
+                </div>
+
+
+                <script src="js/js-refresh-manifest.js"></script>
+                <script src="js/clicker.js"></script>
+        </body>
+</html>

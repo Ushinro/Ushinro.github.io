@@ -1,0 +1,471 @@
+/* Mobile First */
+html {
+    background: #2c2038;
+    font-family: Arial, sans-serif;
+
+    -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+       -moz-animation: fadein 1.5s; /* Firefox */
+        -ms-animation: fadein 1.5s; /* Internet Explorer */
+         -o-animation: fadein 1.5s; /* Opera */
+            animation: fadein 1.5s;
+}
+
+body {
+	color: #CCC;
+	margin: auto;
+	padding: 0;
+	width: 100%;
+	font-size: 1.5em;
+}
+
+a {
+	color: #c29200;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+header {
+	text-align: center;
+}
+
+li {
+	margin: 0.5em auto;
+}
+
+#aegis {
+	margin: auto;
+	width: 31.25%;
+}
+
+#content-container {
+	margin: auto;
+	text-align: left;
+	width: 100%;
+}
+
+.dates-location,
+#tickets {
+	padding: 0 1em;
+}
+
+.dates {
+	font-size: 1.25em;
+	margin-bottom: -0.5em;
+}
+
+.dates-location {
+	font-weight: bold;
+	font-size: 1em;
+	text-align: center;
+}
+
+#dota-svg,
+#keyarena-svg,
+#shield-svg,
+#tickets-svg {
+	cursor: pointer;
+}
+
+#event-description {
+	font-family: Lucida Bright;
+	font-size: 0.75em;
+	margin: 0 auto;
+}
+
+#event-name {
+	font-family: Kunstler Script;
+	font-size: 2em;
+	margin: 0 auto;
+}
+
+#logo {
+	margin: 1em auto 0;
+	width: 20%;
+}
+
+#prize {
+	font-family: Trebuchet MS;
+	font-size: 2em;
+	margin: -0.75em auto;
+}
+
+#prize-pool {
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+#prize-pool h2 {
+	color: #cca486;
+	font-family: PT Serif;
+	font-size: 1.5em;
+}
+
+#sound-icon {
+	cursor: pointer;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	transition-property: transform;
+	transition-duration: 0.5s;
+	-webkit-transition-property: transform;
+	-webkit-transition-duration: 0.5s;
+	width: 30px;
+}
+
+#sound-icon:hover {
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+}
+
+#teams h2 {
+	color: #cca486;
+	margin-bottom: -0.5em;
+	text-align: center;
+}
+
+#teams ul li {
+	font-family: Arial;
+	list-style: none;
+	margin-left: -1em;
+	text-align: center;
+}
+
+.ticket-limit {
+	font-size: 0.6em;
+	margin: 0;
+	text-align: center;
+}
+
+#ticket-notice {
+	width: 50%;
+}
+
+#ticket-notice {
+	font-size: 0.9em;
+	margin: -10% auto;
+	text-align: center;
+}
+
+#vip-details {
+	display: none;
+}
+
+
+/**********************/
+/*** SVG Animations ***/
+/**********************/
+#bottom-hole,
+#middle-hole,
+#top-hole {
+	fill: #000;
+	stroke: #000;
+    transition-property: fill, stroke;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    -webkit-transition-property: fill, stroke;
+    -webkit-transition-duration: 0.5s, 0.5s;
+    -webkit-transition-timing-function: ease-in-out, ease-in-out;
+}
+#dota-svg:hover #bottom-hole,
+#dota-svg:hover #middle-hole,
+#dota-svg:hover #top-hole {
+	filter: url(#dotaHoleGlowBlurred);
+    fill: #FEFB86;
+    stroke: #FEFB86;
+    stroke-width: 1em;
+    stroke-opacity: 0.8;
+}
+
+#keyarena-svg {
+	width: 85%;
+}
+
+#keyarena-svg #key {
+	transition-property: transform;
+	transition-duration: 0.5s;
+	transition-timing function: ease-out;
+}
+
+#keyarena-svg:hover #key {
+	transform: translate(15px, 0);
+	-webkit-transform: translate(15px, 0);
+}
+
+
+#rim {
+    stroke: #000;
+    transition-property: stroke;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+#shield-svg,
+#tickets-svg {
+	padding: 1%;
+	width: 95%;
+}
+
+#shield-svg #rim {
+    filter: url(#shieldGlowBlurred);
+    stroke: #09B5CE;
+    stroke-width: 0.2em;
+    stroke-opacity: 0;
+
+    transition-property: stroke;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+
+    animation: anim-shield-glow-frames ease-in-out 2.5s;
+	animation-iteration-count: infinite;
+	-webkit-animation: anim-shield-glow-frames ease-in-out 2.5s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+#shield-svg:hover #rim {
+	stroke: #F60B17;
+}
+
+#tickets-svg #top-ticket,
+#tickets-svg #bottom-ticket {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transition-property: rotate;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+}
+#tickets-svg:hover #top-ticket {
+    transform: rotate(5deg) translate(0, 15px);
+    -webkit-transform: rotate(5deg) translate(0, 15px);
+    transform-origin: 50%;
+    -webkit-transform-origin: 50%;
+}
+#tickets-svg:hover #bottom-ticket {
+    transform: rotate(-5deg) translate(0, -15px);
+    -webkit-transform: rotate(-5deg) translate(0, -15px);
+    transform-origin: 50%;
+    -webkit-transform-origin: 50%;
+}
+/**************************/
+/*** End SVG Animations ***/
+/**************************/
+
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+	.dates {
+		float: left;
+	}
+
+	.dates,
+	.location {
+		width: 45%;
+	}
+
+	.dates-location {
+		margin: auto;
+		overflow: auto;
+		width: 90%;
+	}
+
+	#event-description {
+		font-size: 1.25em;
+	}
+
+	#event-name {
+		font-size: 4.125em;
+	}
+
+	.location {
+		font-size: 1.25em;
+		float: right;
+	}
+
+	#logo {
+		width: 21.09375%;
+	}
+
+	#prize {
+		font-size: 4em;
+	}
+
+	#prize-pool h2 {
+		font-size: 2em;
+		margin-bottom: 1.25em;
+	}
+
+	.ticket-limit {
+		font-size: 1.1em;
+		margin-left: 0.8em;
+	}
+
+	#teams ul {
+		overflow: auto;
+		width: 100%;
+	}
+
+	#teams ul li {
+		float: left;
+		width: 50%;
+	}
+
+	#ticket-notice {
+		font-size: 2.28125em;
+	}
+
+	#vip-details {
+		display: block;
+	}
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+	body {
+		font-size: 1.25em;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	body {
+		width: 90%;
+		font-size: 1em;
+	}
+
+	h1 {
+		padding: 0;
+		margin: 0;
+		font-size: 2em;
+	}
+
+	#aegis {
+		width: 23.90625%;
+	}
+
+	#aegis #shield-svg {
+		width: 100%;
+	}
+
+	#content-container {
+		padding: 1em 0;
+	}
+
+	.dates,
+	.location {
+		font-size: 2em;
+	}
+
+	.dates-location {
+		font-size: 1.25em;
+	}
+
+	#event-description {
+		font-size: 4em;
+	}
+
+	#event-name {
+		font-size: 7.1875em;
+	}
+
+	#logo {
+		width: 12.65625%;
+	}
+
+	#logo #dota-svg {
+		width: 100%;
+	}
+
+	#main-content {
+		overflow: auto;
+	}
+
+	.prices {
+		font-size: 1.5em;
+	}
+
+	#prize {
+		font-size: 10em;
+	}
+
+	#prize-pool {
+		width: 100%;
+	}
+
+	#prize-pool h2 {
+		font-size: 3.5em;
+		margin-bottom: 2em;
+	}
+
+	#teams {
+		float: right;
+		width: 45%;
+	}
+
+	#teams h2 {
+		font-size: 3.08125em;
+		margin: 0 auto;
+	}
+
+	#teams ul {
+		width: 92%;
+	}
+
+	#teams ul li {
+		font-size: 1.5em;
+	}
+
+	#tickets {
+		float: left;
+		width: 45%;
+	}
+
+	#ticket-notice {
+		width: 75%;
+	}
+}
+
+
+@keyframes anim-shield-glow-frames {
+    0% {
+    	stroke-opacity: 0;
+    }
+    50% {
+    	stroke-opacity: 0.9;
+    }
+    100% {
+    	stroke-opacity: 0;
+    }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes anim-shield-glow-frames {
+    0% {
+    	stroke-opacity: 0;
+    }
+    50% {
+    	stroke-opacity: 0.9;
+    }
+    100% {
+    	stroke-opacity: 0;
+    }
+}
+
+
+/* Webkit Code */
+@-webkit-keyframes pint-toast {
+    0% {
+        -webkit-transform: rotate(0);
+    }
+    50% {
+        -webkit-transform: rotate(5deg);
+    }
+    100% {
+        -webkit-transform: rotate(0);
+    }
+}

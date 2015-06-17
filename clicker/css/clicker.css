@@ -1,0 +1,47 @@
+body {
+        text-align : center;
+}
+
+button {
+        background    : #FCD127;
+        border        : none;
+        border-radius : 2px;
+        font-size     : 1.5em;
+        padding       : 5px;
+        transition    : background 0.2s;
+}
+
+button:hover {
+        background : #EA9B24;
+}
+
+button:active {
+        background : #D28613;
+}
+
+.add,
+.subtract {
+        font-size : 2em;
+        margin    : 0 10px;
+        padding   : 10px 5px;
+        width     : 100px;
+}
+
+#click-count {
+        font-size : 2em;
+}
+
+#click-counter {
+        margin-bottom : 10px;
+}
+
+#click-rate,
+#time-display {
+        font-size : 2em;
+        margin    : 10px;
+}
+
+#clicker,
+#stopwatch {
+        margin : 1em auto;
+}

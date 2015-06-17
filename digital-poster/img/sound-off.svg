@@ -1,0 +1,28 @@
+<?xml-stylesheet type="text/css" href="../css/main-06.css"?>
+<svg id="snd-off-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+<style type="text/css">
+<![CDATA[
+	.st0{fill:#FFFFFF;}
+
+	#snd-waves {
+		opacity: 0;
+
+        transition-property: opacity;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
+	}
+
+	#snd-off-svg:hover #snd-waves {
+		opacity: 0.5;
+	}
+]]>
+</style>
+<g id="snd-waves">
+	<path id="snd-wave-lg" class="st0" d="M220.3,268.1c106.3-39.2,106.2-196.9,0-236.2c-9-3.3-12.9,11.8-3.9,15.2
+		c92.2,34.1,92.2,171.8,0,205.9C207.5,256.3,211.3,271.4,220.3,268.1z"/>
+	<path id="snd-wave-sm" class="st0" d="M220.9,210.5c43.8-28.6,43.8-92.5,0-121c-8.2-5.3-15.6,8.3-7.5,13.5
+		c34.3,22.4,34.3,71.6,0,94C205.3,202.3,212.7,215.8,220.9,210.5z"/>
+</g>
+<path id="speaker" class="st0" d="M178.2,0L71.5,92.5c0,0,0,0-0.1,0H17.3C7.7,92.5,0,100.7,0,110.8v78.4c0,10.1,7.7,18.4,17.3,18.4
+	h54.1c0,0,0,0,0.1,0L178.2,300V0z"/>
+</svg>

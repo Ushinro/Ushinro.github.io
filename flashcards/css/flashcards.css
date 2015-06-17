@@ -1,0 +1,153 @@
+body {
+	background  : #272822;
+	color       : #dfdfdf;
+	font-family : sans-serif;
+}
+
+
+button {
+	/*background: #e0cd6e;*/
+	background    : #3498DB;
+	border        : none;
+	border-radius : 3px;
+	color         : #dfdfdf;
+	font-size     : 1.25em;
+	margin        : auto;
+	padding       : 10px 5px;
+}
+
+button:hover {
+	background: #2079B5;
+}
+
+button:active {
+	background: #175986;
+}
+
+
+input,
+textarea {
+	font-family : sans-serif;
+	font-size   : 1.1em;
+	padding     : 0.5em;
+}
+
+
+input[type=text],
+textarea {
+	margin : auto;
+	width  : 100%;
+}
+
+
+label {
+	font-size: 1.5em;
+}
+
+
+table {
+	width: 100%;
+}
+
+
+td:nth-child(n+2) {
+	text-align: center;
+}
+
+td button {
+	width: 90%;
+}
+
+
+#buttons {
+	text-align : right;
+	overflow   : auto;
+}
+
+
+/* Keep Width:Height in a 4:3 ratio to mimic a 4" x 3" index card */
+#cards {
+	height      : 50%;
+	margin      : 1.5em auto;
+	perspective : 800px;
+	position    : relative;
+	width       : 100%;
+}
+
+
+/*#cards:hover add.html {
+	transform: rotateY( 180deg );
+}*/
+
+
+.card {
+	border          : 1px solid #575757;
+	height          : 100%;
+	transform-style : preserve-3d;
+	transition      : transform 0.5s;
+	width           : 100%;
+}
+
+
+.card figure {
+	backface-visibility : hidden;    /* Hide back-side of the faces when they are facing away from the viewer */
+	display             : block;
+	font-size           : 2em;
+	height              : 100%;
+	padding             : 0.5em;
+	text-align          : center;
+	width               : 100%;
+}
+
+
+.card .front,
+.card .back {
+	background : #eee;
+	color      : #000;
+}
+
+
+.card .back {
+	transform: rotateY( 180deg );
+}
+
+
+.card.flipped {
+	transform: rotateY( 180deg );
+}
+
+
+.face {
+	position: absolute;
+}
+
+
+#cardSets {
+	margin : 15px auto;
+	width  : 100%;
+}
+
+
+#flashcardForm {
+	margin : 15px auto;
+	width  : 100%;
+}
+
+
+
+@media screen and (min-width: 640px) {
+	#cards {
+		height: 432px;
+	}
+
+
+	#cards,
+	#cardSets {
+		width: 576px;
+	}
+
+
+	#flashcardForm {
+		width: 480px;
+	}
+}

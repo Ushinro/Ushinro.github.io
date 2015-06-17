@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="utf-8">
+
+                <style>
+                        html { background: #F7F7F7; }
+                        #gameBoard {
+                                margin: 0 auto;
+                                display: block;
+                                border: 2px solid black;
+                                border-bottom: 5px solid green;
+                                background: white;
+                        }
+                        #lines {
+                                display: block;
+                                width: 240px;
+                                margin: 0 auto;
+                                margin-top: 2em;
+                                color: #444;
+                                font-size: 1.5em;
+                        }
+                </style>
+
+                <title>HTML5 Canvas - Tetris</title>
+        </head>
+
+        <body>
+                <span id="lines">Lines: 0</span>
+
+                <canvas id="gameBoard"></canvas>
+
+                <script src="js/tetrominoes.js"></script>
+                <script src="js/tetris.js"></script>
+        </body>
+</html>

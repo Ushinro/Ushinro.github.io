@@ -1,0 +1,467 @@
+:root {
+	--color-chestnut-rose : #d24d57;
+}
+
+a {
+	color : inherit;
+}
+
+body {
+	font-family : Montserrat, DejaVu Sans, Euphemia, Corbel, Britannic Bold, sans-serif;
+	text-align  : center;
+}
+
+header,
+footer {
+	background : rgba(0, 0, 0, 0.8);
+	color      : #ecf0f1;
+
+	padding    : 0.5em 0;
+
+	width      : 100%;
+}
+
+header input,
+header select {
+	font-size  : 1.5em;
+	margin     : auto;
+	text-align : center;
+	width      : 300px;
+}
+
+#color-code-format-field {
+	-moz-appearance    : none;
+	-webkit-appearance : none;
+	appearance         : none;
+	border             : none;
+	cursor             : pointer;
+	padding            : 1px 0;
+}
+
+#color-code-format-field:after {
+	content: "V";
+}
+
+#wrapper {
+	color                : #FFFFFF;
+
+	font-size            : 1.5em;
+
+	-moz-column-count    : 1;
+	-moz-column-width    : 100%;
+	-moz-column-gap      : 0;
+	-moz-column-rule     : 0;
+
+	-webkit-column-count : 1;
+	-webkit-column-width : 100%;
+	-webkit-column-gap   : 0;
+	-webkit-column-rule  : 0;
+
+	column-count         : 1;
+	column-width         : 100%;
+	column-gap           : 0;
+	column-rule          : 0;
+}
+
+#wrapper div {
+	cursor     : pointer;
+	padding    : 35% 0;
+	text-align : center;
+}
+
+
+
+/* RED */
+.chestnut-rose {
+	background: var(--color-chestnut-rose);
+}
+.cinnabar {
+	background: #e74c3c;
+}
+.flamingo {
+	background: #ef4836;
+}
+.monza {
+	background: #cf000f;
+}
+.old-brick {
+	background: #96281b;
+}
+.pomegranate {
+	background: #f22613;
+}
+.tall-poppy {
+	background: #c0392b;
+}
+.thunderbird {
+	background: #d91e18;
+}
+.valencia {
+	background: #d64541;
+}
+/* PINK */
+.cabaret {
+	background: #d2527f;
+}
+.new-york-pink {
+	background: #e08283;
+}
+.radical-red {
+	background: #f62459;
+}
+.razzmatazz {
+	background: #db0a5b;
+}
+.sunglo {
+	background: #e26a6a;
+}
+.sunset-orange {
+	background: #f64747;
+}
+.wax-flower {
+	background: #f1a9a0;
+}
+/* PURPLE */
+.honey-flower {
+	background: #674172;
+}
+.light-wisteria {
+	background: #be90d4;
+}
+.medium-purple {
+	background: #bf55ec;
+}
+.plum {
+	background: #913d88;
+}
+.rebeccapurple {
+	background: #663399;
+}
+.seance {
+	background: #9a12b3;
+}
+.snuff {
+	background: #dcc6e0;
+}
+.studio {
+	background: #8e44ad;
+}
+.wisteria {
+	background: #9b59b6;
+}
+.wistful {
+	background: #aea8d3;
+}
+/* BLUE */
+.alice-blue {
+	background: #e4f1fe;
+}
+.chambray {
+	background: #3a539b;
+}
+.curious-blue {
+	background: #3498db;
+}
+.curious-blue-2 {
+	background: #1e8bc3;
+}
+.dodger-blue {
+	background: #19b5fe;
+}
+.ebony-clay {
+	background: #22313f;
+}
+.fountain-blue {
+	background: #5c97bf;
+}
+.hoki {
+	background: #67809f;
+}
+.humming-bird {
+	background: #c5eff7;
+}
+.jacksons-purple {
+	background: #1f3a93;
+}
+.jelly-bean {
+	background: #2574a9;
+}
+.jordy-blue {
+	background: #89c4f4;
+}
+.madison {
+	background: #2c3e50;
+}
+.malibu {
+	background: #6bb9f0;
+}
+.ming {
+	background: #336e7b;
+}
+.pickled-bluewood {
+	background: #34495e;
+}
+.picton-blue {
+	background: #59abe3;
+}
+.picton-blue-2 {
+	background: #22a7f0;
+}
+.royal-blue {
+	background: #4183d7;
+}
+.san-marino {
+	background: #446cb3;
+}
+.shakespeare {
+	background: #52b3d9;
+}
+.spray {
+	background: #81cfe0;
+}
+.steel-blue {
+	background: #4b77be;
+}
+/* GREEN */
+.aqua-island {
+	background: #a2ded0;
+}
+.caribbean-green {
+	background: #03c9a9;
+}
+.dark-sea-green {
+	background: #90c695;
+}
+.downy {
+	background: #65c6bb;
+}
+.emerald {
+	background: #3fc380;
+}
+.eucalyptus {
+	background: #26a65b;
+}
+.free-speech-aquamarine {
+	background: #03a678;
+}
+.green-haze {
+	background: #019875;
+}
+.gossip {
+	background: #87d37c;
+}
+.jade {
+	background: #00b16a;
+}
+.jungle-green {
+	background: #26c281;
+}
+.light-sea-green {
+	background: #1ba39c;
+}
+.madang {
+	background: #c8f7c5;
+}
+.medium-aquamarine {
+	background: #66cc99;
+}
+.medium-turquoise {
+	background: #4ecdc4;
+}
+.mountain-meadow {
+	background: #1bbc9b;
+}
+.mountain-meadow-2 {
+	background: #16a085;
+}
+.niagara {
+	background: #2abb9b;
+}
+.observatory {
+	background: #00b16a;
+}
+.ocean-green {
+	background: #4daf7c;
+}
+.riptide {
+	background: #86e2d5;
+}
+.salem {
+	background: #1e824c;
+}
+.shamrock {
+	background: #2ecc71;
+}
+.silver-tree {
+	background: #68c3a3;
+}
+.turquoise {
+	background: #36d7b7;
+}
+/* YELLOW */
+.cream-can {
+	background: #f5d76e;
+}
+.ripe-lemon {
+	background: #f7ca18;
+}
+.saffron {
+	background: #f4d03f;
+}
+/* ORANGE */
+.burnt-orange {
+	background: #d35400;
+}
+.buttercup {
+	background: #f38c12;
+}
+.california {
+	background: #f89406;
+}
+.cape-honey {
+	background: #fde3a7;
+}
+.casablanca {
+	background: #f4b350;
+}
+.crusta {
+	background: #f2784b;
+}
+.ecstasy {
+	background: #f9690e;
+}
+.fire-bush {
+	background: #eb9532;
+}
+.jaffa {
+	background: #db974e;
+}
+.jaffa-2 {
+	background: #f27935;
+}
+.lightning-yellow {
+	background: #f5ab35;
+}
+.sandstorm {
+	background: #f9bf3b;
+}
+.tahiti-gold {
+	background: #e87e04;
+}
+.zest {
+	background: #e67e22;
+}
+/* GRAY */
+.cararra {
+	background: #f2f1ef;
+}
+.cascade {
+	background: #95a5a6;
+}
+.edward {
+	background: #abb7b7;
+}
+.gallery {
+	background: #eeeeee;
+}
+.iron {
+	background: #dadfe1;
+}
+.lynch {
+	background: #6c7a89;
+}
+.porcelain {
+	background: #ecf0f1;
+}
+.pumice {
+	background: #d2d7d3;
+}
+.silver {
+	background: #bfbfbf;
+}
+.silver-sand {
+	background: #bdc3c7;
+}
+.white-smoke {
+	background: #ececec;
+}
+
+
+@media screen and (min-width: 480px) {
+	#wrapper {
+		-moz-column-count    : 2;
+		-moz-column-width    : 50%;
+		-moz-column-gap      : 0;
+		-moz-column-rule     : 0;
+
+		-webkit-column-count : 2;
+		-webkit-column-width : 50%;
+		-webkit-column-gap   : 0;
+		-webkit-column-rule  : 0;
+
+		column-count         : 2;
+		column-width         : 50%;
+		column-gap           : 0;
+		column-rule          : 0;
+	}
+}
+
+
+@media screen and (min-width: 640px) {
+	#wrapper {
+		-moz-column-count    : 3;
+		-moz-column-width    : 33.33%;
+		-moz-column-gap      : 0;
+		-moz-column-rule     : 0;
+
+		-webkit-column-count : 3;
+		-webkit-column-width : 33.33%;
+		-webkit-column-gap   : 0;
+		-webkit-column-rule  : 0;
+
+		column-count         : 3;
+		column-width         : 33.33%;
+		column-gap           : 0;
+		column-rule          : 0;
+	}
+}
+
+
+@media screen and (min-width: 800px) {
+	#wrapper {
+		-moz-column-count    : 4;
+		-moz-column-width    : 25%;
+		-moz-column-gap      : 0;
+		-moz-column-rule     : 0;
+
+		-webkit-column-count : 4;
+		-webkit-column-width : 25%;
+		-webkit-column-gap   : 0;
+		-webkit-column-rule  : 0;
+
+		column-count         : 4;
+		column-width         : 25%;
+		column-gap           : 0;
+		column-rule          : 0;
+	}
+}
+
+
+@media screen and (min-width: 1024px) {
+	#wrapper {
+		-moz-column-count    : 5;
+		-moz-column-width    : 20%;
+		-moz-column-gap      : 0;
+		-moz-column-rule     : 0;
+
+		-webkit-column-count : 5;
+		-webkit-column-width : 20%;
+		-webkit-column-gap   : 0;
+		-webkit-column-rule  : 0;
+
+		column-count         : 5;
+		column-width         : 20%;
+		column-gap           : 0;
+		column-rule          : 0;
+	}
+}
