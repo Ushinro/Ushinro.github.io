@@ -8,6 +8,7 @@
 
 body {
         font-family : Browallia New, Corbel, Dotum, Euphemia, sans-serif;
+        scroll-behavior : smooth;
 }
 
 #contact {
