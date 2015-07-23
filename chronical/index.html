@@ -1,56 +1,89 @@
 <!DOCTYPE html>
 <html lang="en" encoding="utf-8">
-        <head>
-                <!-- META -->
-                <meta charset="utf-8" />
-                <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0" />
-                <meta name="author" content="Ushinro">
-                <meta name="description" content="Schedule events!">
-                <meta name="keywords" content="">
+	<head>
+		<!-- META -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width, maximum-scale=1.0" />
+		<meta name="author" content="Ushinro">
+		<meta name="description" content="Schedule events!">
+		<meta name="keywords" content="">
 
 
-                <link rel="stylesheet" href="css/reset.css">
-                <link rel="stylesheet" href="css/chronical.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
 
-                
-                <title>Chronical - Schedule Events</title>
-        </head>
+		
+		<title>Chronical - Schedule Events</title>
+	</head>
 
-        <body>
-                <div id="currentTimeDisplay">
-                        <span id="currentTime"></span>
-                        <span id="timezoneOffset"></span>
-                </div>
+	<body>
+		<header>
+			<h1>Chronical</h1>
+			<h4 class="subtitle">Schedule your next event</h4>
+		</header>
 
-                <form>
-                        <div class="eventDetailInput">
-                                <label for="eventName" id="eventNameLabel">Event Name</label>
-                                <input type="text" id="eventName">
-                        </div>
+		<section>
+			<h2 class="label">
+				Date
+			</h2>
+			<div class="input">
+				<input type="number" name="date" placeholder="DD"/>
+				<input type="month" name="month" placeholder="MM"/>
+				<input type="year" name="year" placeholder="YYYY"/>
+			</div>
+			<div class="btn">
+				<button>
+					+ 1d
+				</button>
+				<button>
+					- 1d
+				</button>
+			</div>
+		</section>
 
-                        <div class="eventDetailInput">
-                                <label for="eventDate" id="eventDateLabel">Event Date</label>
-                                <input type="date" id="eventDate">
-                        </div>
 
-                        <div class="eventDetailInput">
-                                <label for="eventTime" id="eventTimeLabel">Event Time</label>
-                                <input type="time" id="eventTime">
-                        </div>
 
-                        <div class="eventDetailInput">
-                                <button type="submit" id="eventDetailsSubmit">Create New Countdown</button>
-                        </div>
-                </form>
+		<section>
+			<h2 class="label">
+				Time
+			</h2>
+			<div class="input">
+				<input type="time" name="time" placeholder="09:00"/>
+				<select name="format" id="time-format">
+					<optgroup label="Format">
+						<option value="24h" selected>24-hour</option>
+						<option value="am" disabled>AM</option>
+						<option value="pm" disabled>PM</option>
+					</optgroup>
+				</select>
+			</div>
+			<div class="btn">
+				<button>
+					+ 15m
+				</button>
+				<button>
+					- 15m
+				</button>
+			</div>
+		</section>
 
-                <table id="eventsList">
-                        <th>Name</th>
-                        <th>Date</th>
-                        <th>Time</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
-                </table>
 
-                <script src="js/chronical.js"></script>
-        </body>
+
+		<section>
+			<h2 class="label">
+				Title (Optional)
+			</h2>
+			<div class="input">
+				<input type="text" name="title" placeholder="My Event Name"/>
+			</div>
+		</section>
+
+		<br/>
+
+		<button type="submit">
+			Create Countdown
+		</button>
+
+		<script src="js/chronical.js"></script>
+	</body>
 </html>
