@@ -18,7 +18,7 @@ body {
 
 .btn > *,
 .input > * {
-	width   : 100%;
+	width : 100%;
 }
 
 
@@ -30,14 +30,15 @@ body {
 
 
 button {
-	background  : #E74040;
-	border      : none;
-	color       : #ffffff;
-	cursor      : pointer;
-	font-weight : bold;
-	padding     : 10px;
-	transition  : background 0.2s;
-	width       : 100%;
+	background    : #E74040;
+	border        : none;
+	border-radius : 0;
+	color         : #ffffff;
+	cursor        : pointer;
+	font-weight   : bold;
+	padding       : 10px;
+	transition    : background 0.2s;
+	width         : 100%;
 }
 
 
@@ -72,15 +73,29 @@ input {
 
 
 
+input,
+select {
+	border-radius : 0;
+	width         : 100%;
+}
+
+
+
+input[type=number] {
+	-moz-appearance : textfield;
+	appearance      : textfield;
+}
+
+
+
 input:focus {
 	background : #FAF7D3;
-	/*outline    : 1px solid #95C7CC;*/
 }
 
 
 
 input:not(:first-child) {
-	border : none;
+	border      : none;
 	border-left : 1px solid #C8C8C8;
 }
 
@@ -94,24 +109,9 @@ input::-webkit-outer-spin-button {
 
 
 
-input[type=number] {
-	-moz-appearance    : textfield;
-	appearance         : textfield;
-}
-
-
-
-input,
-select {
-	border-radius : 0;
-	width         : 100%;
-}
-
-
-
 .input > * {
 	border    : none;
-	font-size : 1.15em;
+	font-size : 1.2em;
 	padding   : 5px;
 }
 
@@ -144,5 +144,14 @@ select {
 
 
 .subtitle {
-	font-style : italic;
+	font-style  : italic;
+	font-weight : normal;
+}
+
+
+
+@media all and (min-width : 768px) {
+	body {
+		width : 768px;
+	}
 }
