@@ -137,14 +137,14 @@ section * {
 
 
 select {
-	border : none;
+	border      : none;
 	border-left : 1px solid #C8C8C8 !important;
 }
 
 
 
 .subtitle {
-	font-style  : italic;
+	font-style  : oblique;
 	font-weight : normal;
 }
 
