@@ -18,6 +18,7 @@
 	<body>
 		<header>
 			<h1>Chronical</h1>
+			
 			<h4 class="subtitle">Schedule your next event</h4>
 		</header>
 
@@ -27,22 +28,27 @@
 				<h2 class="label">
 					Date and Time
 				</h2>
+
 				<div class="input">
-					<input type="datetime-local" id="datetime" name="datetime" value="2010-12-16 12:01:00"/>
+					<input type="datetime-local" id="datetime" name="datetime" value="2010-01-01 12:00:00"/>
 				</div>
+
 				<div class="btn">
 					<div class="date-btn">
 						<button onclick="Event.adjustDate(1, 'd');">
 							+ 1d
 						</button>
+
 						<button onclick="Event.adjustDate(-1, 'd');">
 							- 1d
 						</button>
 					</div>
+
 					<div class="time-btn">
 						<button onclick="Event.adjustTime(15, 'm');">
 							+ 15m
 						</button>
+
 						<button onclick="Event.adjustTime(-15, 'm');">
 							- 15m
 						</button>
@@ -56,6 +62,7 @@
 				<h2 class="label">
 					Event Title (Optional)
 				</h2>
+
 				<div class="input">
 					<input type="text" id="event-title" name="event-title" placeholder="My Event Title"/>
 				</div>
@@ -67,6 +74,7 @@
 				Create Countdown
 			</button>
 		</form>
+
 
 		<script src="js/main.js"></script>
 	</body>
