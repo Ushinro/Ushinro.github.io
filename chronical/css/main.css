@@ -16,14 +16,29 @@ body {
 
 
 
-.btn > *,
-.input > * {
-	width : 100%;
+.btn {
+	flex-direction : column;
 }
 
 
 
-.btn button:not(:first-child) {
+.btn > *,
+.input > * {
+	display        : flex;
+	flex-direction : row;
+	width          : 100%;
+}
+
+
+
+
+.btn > *:not(:first-child) {
+	border-top : 1px solid #C8C8C8;
+}
+
+
+
+.btn > * *:not(:first-child) {
 	border-left : 1px solid #C8C8C8;
 }
 
@@ -153,5 +168,18 @@ select {
 @media all and (min-width : 768px) {
 	body {
 		width : 768px;
+	}
+
+
+
+	.btn {
+		flex-direction : row;
+	}
+
+
+
+	.btn > *:not(:first-child) {
+		border-left : 1px solid #C8C8C8;
+		border-top  : none;
 	}
 }
