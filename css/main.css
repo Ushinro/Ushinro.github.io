@@ -8,6 +8,7 @@
 
 body {
 	font-family     : Browallia New, Corbel, Dotum, Euphemia, sans-serif;
+	line-height     : normal;
 	scroll-behavior : smooth;
 }
 
@@ -78,6 +79,7 @@ footer {
 	background : #050505;
 	color      : white;
 	margin     : 0;
+	padding    : 10px 0;
 	text-align : center;
 	width      : 100%;
 }
@@ -166,7 +168,6 @@ p {
 
 #projects > section {
 	margin  : 0 0 10px;
-	padding : 10px;
 }
 
 #projects {
@@ -178,6 +179,12 @@ section {
 	display : block;
 }
 
+.section-title {
+	font-size  : 2.75em;
+	margin     : 10px 0.5em -10px;
+	text-align : center;
+}
+
 .skills {
 	display : flex;
 	font-size : 1.5em;
@@ -185,12 +192,6 @@ section {
 
 .skills > li:not(:first-child) {
 	margin : 0 0 0 1em;
-}
-
-.title {
-	font-size  : 2.75em;
-	margin     : 0 0 0.25em;
-	text-align : center;
 }
 
 #wrapper {
@@ -202,13 +203,7 @@ section {
 
 #wrapper > article {
 	flex    : 1 100%;
-	padding : 1em 1.5em;
-}
-
-@media all and (min-width : 768px) {
-	#wrapper > article {
-		padding : 10px 3em;
-	}
+	padding : 10px 1.5em;
 }
 
 @media all and (min-width : 1024px) {
@@ -243,6 +238,10 @@ section {
 		line-height : 1.25em;
 	}
 
+	#projects > section {
+		padding : 10px;
+	}
+
 	.project-description {
 		margin : 0 0 0 10px;
 	}
@@ -260,7 +259,7 @@ section {
 		font-size : 3em;
 	}
 
-	.title {
+	.section-title {
 		font-size : 4em;
 		margin    : 10px 0.5em -10px;
 	}
