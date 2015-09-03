@@ -6,6 +6,10 @@
 	color : #2980B9;
 }
 
+#about {
+	background : #EEE;
+}
+
 body {
 	font-family     : Browallia New, Corbel, Dotum, Euphemia, sans-serif;
 	line-height     : normal;
@@ -57,17 +61,14 @@ body {
 }
 
 figcaption {
-	border-top : 1px solid #C8C8C8;
-	border-top : var(--figure-border);
-	padding    : 5px;
 	text-align : center;
 }
 
 figure {
 	border : 1px solid #C8C8C8;
 	border : var(--figure-border);
-	height : 100%;
-	margin : 0.25em 0;
+	float  : left;
+	margin : 0 0 15px;
 }
 
 figure img {
@@ -86,6 +87,11 @@ footer {
 
 h4 {
 	font-size : 2.5em;
+}
+
+#header {
+	margin     : 0 auto;
+	text-align : center;
 }
 
 input,
@@ -115,7 +121,7 @@ nav {
 
 nav ul {
 	display    : flex;
-	font-size  : 1.75em;
+	font-size  : 1.25em;
 	flex-flow  : row nowrap;
 	list-style : none;
 	margin     : 0;
@@ -125,7 +131,7 @@ nav ul {
 nav ul a {
 	color           : #F5F5F5;
 	display         : block;
-	padding         : 15px;
+	padding         : 5px 15px;
 	text-decoration : none;
 	transition      : background 0.2s ease-out;
 	transition      : color: 0.2s ease-out;
@@ -161,16 +167,20 @@ p {
 }
 
 .project-title {
-	color     : ;
+	color     : #C0392B;
 	display   : inline-block;
 	font-size : 2em;
+}
+
+#projects {
+	background : #EEE;
 }
 
 #projects > section {
 	margin  : 0 0 10px;
 }
 
-#projects {
+#projects > .wrapper {
 	display   : flex;
 	flex-flow : column wrap;
 }
@@ -180,8 +190,8 @@ section {
 }
 
 .section-title {
-	font-size  : 2.75em;
-	margin     : 10px 0.5em -10px;
+	font-size  : 2.5em;
+	margin     : 10px 0.5em 0px;
 	text-align : center;
 }
 
@@ -234,47 +244,30 @@ section {
 	}
 
 	p {
-		font-size   : 2em;
-		line-height : 1.25em;
+		font-size   : 1.5em;
+		line-height : 1.5em;
 	}
 
 	#projects > section {
 		padding : 10px;
 	}
 
-	.project-description {
-		margin : 0 0 0 10px;
-	}
-
-	.project-details {
-		display   : flex;
-		flex-flow : row;
-	}
-
 	.project-details > * {
 		flex : 1 100%;
 	}
 
-	.project-title {
-		font-size : 3em;
-	}
-
 	.section-title {
-		font-size : 4em;
-		margin    : 10px 0.5em -10px;
+		margin : 10px 0.5em 0px;
 	}
 }
 
 @media screen and (min-width : 1280px) {
-	#projects > section:nth-child(even) {
-		border-left : 2px solid #eee;
-	}
-
-	#projects {
+	#projects > .wrapper {
 		flex-flow : row wrap;
 	}
 
-	#projects > section {
-		flex : 50% 0;
+	#projects > .wrapper > section {
+		flex   : 50% 0;
+		padding : 30px 50px;
 	}
 }
