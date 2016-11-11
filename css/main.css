@@ -1,273 +1,236 @@
 :root {
-	--figure-border : 1px solid #C8C8C8;
-}
-
-.title-link {
-	color : #2980B9;
-}
-
-#about {
-	background : #EEE;
+	--figure-border: 1px solid #C8C8C8;
 }
 
 body {
-	font-family     : Browallia New, Corbel, Dotum, Euphemia, sans-serif;
-	line-height     : normal;
-	scroll-behavior : smooth;
+	font-family: Browallia New, Corbel, Dotum, Euphemia, sans-serif;
+	line-height: normal;
+	scroll-behavior: smooth;
 }
 
-#contact {
-	background : #191919;
-	color      : #F0F0F0;
-}
-
-#contact ul {
-	font-size : 2em;
-}
-
-#contact .contact-link {
-	color : #f0f0f0;
-}
-
-#contact-form {
-	width : 100%;
-}
-
-#contact-form button[type="submit"] {
-	background    : #87C0DC;
-	border        : none;
-	border-radius : 2px;
-	cursor        : pointer;
-	font-weight   : bold;
-	margin        : 1em 0;
-	padding       : 1em;
-	width         : 100%;
-}
-
-#contact-form button[type="submit"]:hover {
-	background : #63ADD1;
-}
-
-#contact-form input,
-#contact-form textarea {
-	display : block;
-	margin  : 0.5em 0 1em;
-	width   : 100%;
-}
-
-#contact-form textarea {
-	min-height : 10em;
-	resize     : vertical;
+.contact-link {
+    color: #000000;
 }
 
 figcaption {
-	text-align : center;
+	text-align: center;
 }
 
 figure {
-	border : 1px solid #C8C8C8;
-	border : var(--figure-border);
-	float  : left;
-	margin : 0 0 15px;
+	border: 1px solid #C8C8C8;
+	border: var(--figure-border);
+	float: left;
+	margin: 0 0 15px;
 }
 
 figure img {
-	margin : 0 0 -5px;
-	width  : 100%;
+	margin: 0 0 -5px;
 }
 
 footer {
-	background : #050505;
-	color      : white;
-	margin     : 0;
-	padding    : 10px 0;
-	text-align : center;
-	width      : 100%;
+	background: #050505;
+	color: white;
+	margin: 0;
+	padding: 10px 0;
+	text-align: center;
+	width: 100%;
 }
 
 h4 {
-	font-size : 2.5em;
+	font-size: 2.5em;
 }
 
 #header {
-	margin     : 0 auto;
-	text-align : center;
+	margin: 0 auto;
+	text-align: center;
 }
 
 input,
 textarea {
-	border        : 2px solid #ccc;
-	border-radius : 2px;
-	padding       : 0.5em;
+	border: 2px solid #ccc;
+	border-radius: 2px;
+	padding: 0.5em;
 }
 
 input:focus,
 textarea:focus {
-	border : 2px solid #53B0E8;
+	border: 2px solid #53B0E8;
 }
 
 input:invalid {
-	border : 2px solid #CB000F;
+	border: 2px solid #CB000F;
 }
 
 label {
-	font-size   : 1.5em;
-	font-weight : bold;
+	font-size: 1.5em;
+	font-weight: bold;
 }
 
 nav {
-	background : #c0392b;
+	background: #c0392b;
 }
 
 nav ul {
-	display    : flex;
-	font-size  : 1.25em;
-	flex-flow  : row nowrap;
-	list-style : none;
-	margin     : 0;
-	padding    : 0;
+	display: flex;
+	font-size: 1.25em;
+	flex-flow: row nowrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 nav ul a {
-	color           : #F5F5F5;
-	display         : block;
-	padding         : 5px 15px;
-	text-decoration : none;
-	transition      : background 0.2s ease-out;
-	transition      : color: 0.2s ease-out;
+	color: #F5F5F5;
+	display: block;
+	padding: 5px 15px;
+	text-decoration: none;
+	transition: background 0.2s ease-out;
+	transition: color: 0.2s ease-out;
 }
 
 nav ul a:hover {
-	background : #992E22;
-	color      : #fff;
+	background: #992E22;
+	color: #fff;
 }
 
 nav ul li {
-	flex       : 1 100%;
-	text-align : center;
+	flex: 1 100%;
+	text-align: center;
 }
 
 nav ul li:not(:first-child) {
-	border-left : 1px solid rgba(0,0,0,0.1);
+	border-left: 1px solid rgba(0,0,0,0.1);
 }
 
 nav ul li:not(:last-child) {
-	border-right : 1px solid rgba(255,255,255,0.3);
+	border-right: 1px solid rgba(255,255,255,0.3);
 }
 
 p {
-	font-size   : 1.5em;
-	line-height : 1.5em;
-	margin      : 0;
+	line-height: 1.25em;
+	margin: 0;
+}
+
+.project-description {
+    text-indent: 50px;
 }
 
 .project-details {
-	display   : flex;
-	flex-flow : row wrap;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.project-thumbnail {
+    max-width: 320px;
 }
 
 .project-title {
-	color     : #C0392B;
-	display   : inline-block;
-	font-size : 2em;
-}
-
-#projects {
-	background : #EEE;
+	color: #C0392B;
+	display: inline-block;
+	font-size: 1.5em;
 }
 
 #projects > section {
-	margin  : 0 0 10px;
+	margin: 0 0 10px;
 }
 
 #projects > .wrapper {
-	display   : flex;
-	flex-flow : column wrap;
+	display: flex;
+	flex-flow: column wrap;
 }
 
 section {
-	display : block;
+	display: block;
 }
 
 .section-title {
-	font-size  : 2.5em;
-	margin     : 10px 0.5em 0px;
-	text-align : center;
+	font-size: 2em;
+	margin: 10px 0.5em 0px;
 }
 
 .skills {
-	display : flex;
-	font-size : 1.5em;
+	display: flex;
+	font-size: 1.5em;
 }
 
 .skills > li:not(:first-child) {
-	margin : 0 0 0 1em;
+	margin: 0 0 0 1em;
+}
+
+time {
+    font-size: 0.8em;
+    display: block;
+}
+
+a.title-link,
+a.contact-link {
+	color: #C0392B;
+	text-decoration: none;
+}
+
+a.title-link > *:hover,
+a.contact-link:hover {
+    text-decoration: underline;
 }
 
 #wrapper {
-	display   : flex;
-	flex      : 100% 0;
-	flex-flow : row wrap;
-	margin    : auto;
+	display: flex;
+	flex: 100% 0;
+	flex-flow: row wrap;
+	margin: auto;
 }
 
 #wrapper > article {
-	flex    : 1 100%;
-	padding : 10px 1.5em;
+	flex: 1 100%;
+	padding: 10px 1.5em;
 }
 
-@media all and (min-width : 1024px) {
-	#contact-form {
-		max-width : 480px;
-	}
-
-	#contact-form button[type="submit"] {
-		float : right;
-		width : 50%;
-	}
-
+@media all and (min-width: 1024px) {
 	figcaption {
-		font-size : 1.1em;
+		font-size: 1.1em;
 	}
 
 	nav ul {
-		justify-content : flex-end;
+		justify-content: flex-end;
 	}
 
 	nav ul li {
-		flex : none;
+		flex: none;
 	}
 
 	nav ul li:not(:first-child),
 	nav ul li:not(:last-child) {
-		border : none;
+		border: none;
 	}
 
 	p {
-		font-size   : 1.5em;
-		line-height : 1.5em;
+		line-height: 1.25em;
 	}
 
+	#about, section,
 	#projects > section {
-		padding : 10px;
+		padding: 10px;
 	}
 
 	.project-details > * {
-		flex : 1 100%;
+		flex: 1 50%;
 	}
 
 	.section-title {
-		margin : 10px 0.5em 0px;
+		margin: 10px 0.5em 0px;
+	}
+
+	#wrapper {
+	    max-width: 1024px;
 	}
 }
 
-@media screen and (min-width : 1280px) {
+@media screen and (min-width: 1280px) {
 	#projects > .wrapper {
-		flex-flow : row wrap;
+		flex-flow: row wrap;
 	}
 
-	#projects > .wrapper > section {
-		flex   : 50% 0;
-		padding : 30px 50px;
+    article > .wrapper > section {
+		padding: 10px 40px 0;
 	}
 }
